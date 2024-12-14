@@ -1,0 +1,60 @@
+.flex-container{
+    height: 500px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item{
+    height: 101px;
+    width: 100px;
+    margin: 15px;
+    background-color: white;
+    border: 2px solid;
+}
+
+
+
+@media only  screen and (max-width:480px) {
+    .body-background {
+        background-color: red;
+        color: white;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+@media only  screen and (min-width:481px) and (max-width:768px) {
+    .body-background {
+        background-color: rgb(235, 97, 38);
+        color: rgb(67, 176, 33);
+    }
+
+    .flex-container{
+        flex-direction: row;
+    }
+}
+
+@media only  screen and (min-width:769px) and (max-width:1024px) {
+    .body-background {
+        background-color: rgb(97, 107, 128);
+        color: rgb(21, 137, 214);
+    }
+
+    .flex-container{
+        flex-direction: row;
+    }
+}
+
+
+/*  
+
+FOR MOBILE DEVICES - 320px-480px
+IPDAS AND TABLETS - 481px - 768px
+LAPTOPS AND SAMLL SCREEN - 769px - 1024px
+LARGE SCREEN AND DESKTOPS - 1025px - 1200px
+TV AND EXTRA LARGE SCREENS - 1201px and more
+
+/*
